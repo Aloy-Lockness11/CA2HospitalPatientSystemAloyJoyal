@@ -2,7 +2,7 @@ package HospitalObjects;
 
 import java.io.Serializable;
 import java.time.LocalDate;
-/*
+/**
  * Appointment class to store the details of the appointment
  * @version 1.0
  * @Author Aloy
@@ -19,14 +19,14 @@ public class Appointment implements Serializable {
     private int triage;
     private String doctorFullName;
 
-    /*
+    /**
      * Default constructor
      */
     //Default constructor
     public Appointment() {
     }
 
-    /*
+    /**
      * Constructor to create an appointment
      * @param patientFirstName
      * @param patientLastName
@@ -83,7 +83,7 @@ public class Appointment implements Serializable {
     }
 
     //setters
-    /*
+    /**
      * Setter  to set patient first name
      * @param patientFirstName
      * @throws IllegalArgumentException if patient first name is empty
@@ -95,7 +95,7 @@ public class Appointment implements Serializable {
         this.patientFirstName = patientFirstName;
     }
 
-    /*
+    /**
      * Setter  to set patient last name
      * @param patientLastName
      * @throws IllegalArgumentException if patient last name is empty
@@ -107,7 +107,7 @@ public class Appointment implements Serializable {
         this.patientLastName = patientLastName;
     }
 
-    /*
+    /**
      * Setter  to set patient date of birth
      * @param DoB
      * @throws IllegalArgumentException if date of birth is empty
@@ -122,7 +122,7 @@ public class Appointment implements Serializable {
         this.DoB = DoB;
     }
 
-    /*
+    /**
      * Setter  to set patient issue
      * @param issue
      * @throws IllegalArgumentException if issue is empty
@@ -139,7 +139,7 @@ public class Appointment implements Serializable {
         this.issue = issue;
     }
 
-    /*
+    /**
      * Setter  to set appointment date
      * @param date
      * @throws IllegalArgumentException if date is empty
@@ -155,7 +155,7 @@ public class Appointment implements Serializable {
         this.date = date;
     }
 
-    /*
+    /**
      * Setter  to set triage
      * @param triage
      * @throws IllegalArgumentException if triage is less than 1
@@ -168,7 +168,7 @@ public class Appointment implements Serializable {
         this.triage = triage;
     }
 
-    /*
+    /**
      * Setter  to set doctor full name
      * @param doctorFullName
      * @throws IllegalArgumentException if doctor full name is empty

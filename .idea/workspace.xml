@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dd579d46-5d33-4da9-8177-faa31bd38703" name="Changes" comment="added Hash Map to data structures" />
+    <list default="true" id="dd579d46-5d33-4da9-8177-faa31bd38703" name="Changes" comment="corrected the java doc of Appointment">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Business/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Business/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Datastructures/BoundedPriorityQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Datastructures/BoundedPriorityQueue.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -52,7 +56,7 @@
       <option name="presentableId" value="Default" />
       <updated>1714482816405</updated>
       <workItem from="1714482817427" duration="6000000" />
-      <workItem from="1714502751463" duration="9753000" />
+      <workItem from="1714502751463" duration="12399000" />
     </task>
     <task id="LOCAL-00001" summary="Main Project Structure">
       <option name="closed" value="true" />
@@ -118,15 +122,23 @@
       <option name="project" value="LOCAL" />
       <updated>1714512528282</updated>
     </task>
-    <task id="LOCAL-00009" summary="added Hash Map to data structures">
+    <task id="LOCAL-00009" summary="java docs are done of patient class">
       <option name="closed" value="true" />
-      <created>1714515358883</created>
+      <created>1714512926061</created>
       <option name="number" value="00009" />
       <option name="presentableId" value="LOCAL-00009" />
       <option name="project" value="LOCAL" />
-      <updated>1714515358883</updated>
+      <updated>1714512926061</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="corrected the java doc of Appointment">
+      <option name="closed" value="true" />
+      <created>1714513198169</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1714513198169</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -140,7 +152,8 @@
     <MESSAGE value="patient class done need future changes" />
     <MESSAGE value="linked list is done want to do java docs" />
     <MESSAGE value="boundaryque done until cheacking doctors name and number of slots" />
-    <MESSAGE value="added Hash Map to data structures" />
-    <option name="LAST_COMMIT_MESSAGE" value="added Hash Map to data structures" />
+    <MESSAGE value="java docs are done of patient class" />
+    <MESSAGE value="corrected the java doc of Appointment" />
+    <option name="LAST_COMMIT_MESSAGE" value="corrected the java doc of Appointment" />
   </component>
 </project>
