@@ -17,14 +17,19 @@ public class Appointment {
     }
 
     //Constructor
+    //Constructor
     public Appointment(String patientFirstName, String patientLastName, LocalDate DoB, String issue, LocalDate date, int triage, String doctorFullName) {
-        this.patientFirstName = patientFirstName;
-        this.patientLastName = patientLastName;
-        this.DoB = DoB;
-        this.issue = issue;
-        this.date = date;
-        this.triage = triage;
-        this.doctorFullName = doctorFullName;
+        try {
+            setPatientFirstName(patientFirstName);
+            setPatientLastName(patientLastName);
+            setDoB(DoB);
+            setIssue(issue);
+            setTriage(triage);
+            setDoctorFullName(doctorFullName);
+            this.date=LocalDate.now();
+        } catch (IllegalArgumentException e) {
+            throw new IllegalArgumentException(e.getMessage());
+        }
     }
     //Getters
     //returns a copy of the patient's first name
