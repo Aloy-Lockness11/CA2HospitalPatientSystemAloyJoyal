@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dd579d46-5d33-4da9-8177-faa31bd38703" name="Changes" comment="Setters with exceptions added to Appointments" />
+    <list default="true" id="dd579d46-5d33-4da9-8177-faa31bd38703" name="Changes" comment="constructor handles exeptions">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/HospitalObjects/Appointment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HospitalObjects/Appointment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Utils/FileOperators.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utils/FileOperators.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -51,7 +55,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1714482816405</updated>
-      <workItem from="1714482817427" duration="4302000" />
+      <workItem from="1714482817427" duration="6000000" />
     </task>
     <task id="LOCAL-00001" summary="Main Project Structure">
       <option name="closed" value="true" />
@@ -85,7 +89,15 @@
       <option name="project" value="LOCAL" />
       <updated>1714490718703</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="constructor handles exeptions">
+      <option name="closed" value="true" />
+      <created>1714491303088</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1714491303088</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -95,6 +107,7 @@
     <MESSAGE value="Main Project Structure" />
     <MESSAGE value="Added Appointment Attributes constructors  and getters" />
     <MESSAGE value="Setters with exceptions added to Appointments" />
-    <option name="LAST_COMMIT_MESSAGE" value="Setters with exceptions added to Appointments" />
+    <MESSAGE value="constructor handles exeptions" />
+    <option name="LAST_COMMIT_MESSAGE" value="constructor handles exeptions" />
   </component>
 </project>
