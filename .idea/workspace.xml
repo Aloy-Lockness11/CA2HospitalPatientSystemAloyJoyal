@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dd579d46-5d33-4da9-8177-faa31bd38703" name="Changes" comment="constructor handles exeptions">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="dd579d46-5d33-4da9-8177-faa31bd38703" name="Changes" comment="patient class done need future changes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/HospitalObjects/Patient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HospitalObjects/Patient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Datastructures/BoundedPriorityQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Datastructures/BoundedPriorityQueue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Datastructures/LinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Datastructures/LinkedList.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +56,7 @@
       <option name="presentableId" value="Default" />
       <updated>1714482816405</updated>
       <workItem from="1714482817427" duration="6000000" />
-      <workItem from="1714502751463" duration="3808000" />
+      <workItem from="1714502751463" duration="6448000" />
     </task>
     <task id="LOCAL-00001" summary="Main Project Structure">
       <option name="closed" value="true" />
@@ -98,7 +98,15 @@
       <option name="project" value="LOCAL" />
       <updated>1714491303088</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="patient class done need future changes">
+      <option name="closed" value="true" />
+      <created>1714507198803</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1714507198803</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -109,6 +117,7 @@
     <MESSAGE value="Added Appointment Attributes constructors  and getters" />
     <MESSAGE value="Setters with exceptions added to Appointments" />
     <MESSAGE value="constructor handles exeptions" />
-    <option name="LAST_COMMIT_MESSAGE" value="constructor handles exeptions" />
+    <MESSAGE value="patient class done need future changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="patient class done need future changes" />
   </component>
 </project>
