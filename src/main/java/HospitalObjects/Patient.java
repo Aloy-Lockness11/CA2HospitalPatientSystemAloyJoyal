@@ -70,7 +70,14 @@ public Patient(String firstName, String secondName,
     public LinkedList getAppointments() {
         return new LinkedList().cloneList(getAppointments());
     }
-
+    /**
+     * Compares this patient to the specified object. The result is true if and only if
+     * the argument is not null and is a Patient object that has the same first name,
+     * second name, and date of birth as this object.
+     *
+     * @param o The object to compare this Patient against.
+     * @return true if the given object represents a Patient equivalent to this patient, false otherwise.
+     */
     @Override
     public boolean equals(Object o){
     if (this == o){
