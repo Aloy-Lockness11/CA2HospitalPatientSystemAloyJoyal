@@ -13,7 +13,7 @@ private LocalDate dateOfBirth;
 private LocalDate joiningDate;
 
 
-//private LinkedList<Appointment> appointments;
+private LinkedList appointments;
 
 
 public Patient(String firstName, String secondName,
@@ -23,7 +23,7 @@ public Patient(String firstName, String secondName,
     this.secondName = secondName;
     this.dateOfBirth = dateOfBirth;
     this.joiningDate = joiningDate;
-   // this.appointments = new LinkedList();
+    this.appointments = new LinkedList();
     }
 
     public String getFirstName(){
@@ -42,9 +42,9 @@ public Patient(String firstName, String secondName,
     }
 
 
-   // public LinkedList<Appointment> getAppointments() {
-    //    return appointments;
-  //  }
+    public LinkedList getAppointments() {
+        return new LinkedList().cloneList(getAppointments());
+    }
 
     @Override
     public boolean equals(Object o){

@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dd579d46-5d33-4da9-8177-faa31bd38703" name="Changes" comment="patient class done need future changes">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Datastructures/BoundedPriorityQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Datastructures/BoundedPriorityQueue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Datastructures/LinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Datastructures/LinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/HospitalObjects/Patient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HospitalObjects/Patient.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

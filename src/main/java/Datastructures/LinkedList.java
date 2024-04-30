@@ -71,7 +71,15 @@ public class LinkedList {
        numElelments--;
         return true;
     }
-
+    public LinkedList cloneList(LinkedList list){
+        LinkedList newList = new LinkedList();
+        Node current = first;
+        while (current != null) {
+            newList.addLast(current.appointmentData);
+            current = current.next;
+        }
+        return newList;
+    }
     public void printList() {
         Node current = first;
         while (current != null) {
