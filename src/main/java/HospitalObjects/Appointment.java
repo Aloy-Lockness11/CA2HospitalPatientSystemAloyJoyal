@@ -1,5 +1,6 @@
 package HospitalObjects;
 
+import java.io.Serializable;
 import java.time.LocalDate;
 /*
  * Appointment class to store the details of the appointment
@@ -8,7 +9,7 @@ import java.time.LocalDate;
  *
  */
 
-public class Appointment {
+public class Appointment implements Serializable {
     private String patientFirstName;
     private String patientLastName;
     //date of birth
