@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dd579d46-5d33-4da9-8177-faa31bd38703" name="Changes" comment="boundaryque done until cheacking doctors name and number of slots">
-      <change beforePath="$PROJECT_DIR$/src/main/java/HospitalObjects/Patient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HospitalObjects/Patient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Datastructures/HashMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Datastructures/HashMap.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
