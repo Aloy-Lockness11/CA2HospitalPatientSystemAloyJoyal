@@ -2,11 +2,17 @@ package Datastructures;
 import HospitalObjects.Patient;
 import java.util.LinkedList;
 
+/**
+ * A hash map implementation for storing patients.
+ */
 public class HashMap {
     // Use a LinkedList array for chaining
     private LinkedList<Entry>[] map;
     private int count;
 
+    /**
+     * Constructs an empty PatientHashMap with the default initial capacity.
+     */
     public HashMap() {
         map = new LinkedList[103]; // Initialize the array of linked lists
         for (int i = 0; i < map.length; i++) {
@@ -21,7 +27,12 @@ public class HashMap {
         return slot;
     }
 
-    // Remove a patient by key, using chaining
+    /**
+     * Removes the patient with the specified key from this map, if present.
+     *
+     * @param key the key of the patient to be removed
+     * @return the value associated with the specified key, or null if the key is not found
+     */
     public Patient remove(Patient key) {
         int slot = calcSlot(key);
         for (Entry entry : map[slot]) {
@@ -34,7 +45,12 @@ public class HashMap {
         return null;
     }
 
-    // Get a patient's value by key, using chaining
+    /**
+     * Returns the value to which the specified key is mapped, or null if this map contains no mapping for the key.
+     *
+     * @param key the key whose associated value is to be returned
+     * @return the value to which the specified key is mapped, or null if this map contains no mapping for the key
+     */
     public Patient get(Patient key) {
         int slot = calcSlot(key);
         for (Entry entry : map[slot]) {
@@ -45,7 +61,14 @@ public class HashMap {
         return null;
     }
 
-    // Put a patient in the map, using chaining
+    /**
+     * Associates the specified value with the specified key in this map.
+     * If the map previously contained a mapping for the key, the old value is replaced by the specified value.
+     *
+     * @param key   the key with which the specified value is to be associated
+     * @param value the value to be associated with the specified key
+     * @return the previous value associated with the specified key, or null if the key is not found
+     */
     public Patient put(Patient key, Patient value) {
         int slot = calcSlot(key);
         for (Entry entry : map[slot]) {
@@ -71,7 +94,11 @@ public class HashMap {
         }
     }
 
-    // Get the number of entries in the map
+    /**
+     * Returns the number of entries in this map.
+     *
+     * @return the number of entries in this map
+     */
     public int size() {
         return count;
     }
