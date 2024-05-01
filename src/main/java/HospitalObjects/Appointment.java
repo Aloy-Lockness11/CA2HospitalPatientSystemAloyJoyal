@@ -9,7 +9,7 @@ import java.time.LocalDate;
  *
  */
 
-public class Appointment implements Serializable {
+public class Appointment implements Serializable,Comparable<Appointment>{
     private String patientFirstName;
     private String patientLastName;
     //date of birth
@@ -179,5 +179,13 @@ public class Appointment implements Serializable {
         }
         this.doctorFullName = doctorFullName;
     }
+    @Override
+    public int compareTo(Appointment other) {
+        int triageComparison = Integer.compare(this.triage, other.triage);
+        if (triageComparison != 0) {
+            return triageComparison;
+        }
 
+        return this.date.compareTo(other.date);
+    }
 }
