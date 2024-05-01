@@ -32,6 +32,7 @@ public class App {
      * @param args
      */
     public static void main(String[] args) {
+        App app = new App();
         setup();
         menu();
     }
@@ -93,7 +94,7 @@ public class App {
     }
 
     private static void menuDisplay() {
-        System.out.println("/nChoose your option");
+        System.out.println("Choose your option");
         System.out.println("1. Add a new patient");
         System.out.println("2.Delete patient info");
         System.out.println("3.Display patients details");
@@ -108,7 +109,8 @@ public class App {
         for (BoundedPriorityQueue doctorQueue : doctorQueues) {
             System.out.print(doctorQueue.getDoctorsName()+"|");
         }
-    }/**
+        System.out.println("");
+    }/**2
      * Method to add a patient
      */
     private static void addPatient() {
@@ -162,6 +164,7 @@ public class App {
 
     }
     /**
+     *
      * Method to display the patients
      */
     private static void displayPatients() {

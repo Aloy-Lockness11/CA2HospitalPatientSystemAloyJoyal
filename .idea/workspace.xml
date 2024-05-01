@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dd579d46-5d33-4da9-8177-faa31bd38703" name="Changes" comment="updated patient added 2 methods needed for app">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="dd579d46-5d33-4da9-8177-faa31bd38703" name="Changes" comment="App java doc Completed">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Business/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Business/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Datastructures/BoundedPriorityQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Datastructures/BoundedPriorityQueue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Datastructures/LinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Datastructures/LinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/HospitalObjects/Patient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HospitalObjects/Patient.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,6 +49,26 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RunManager">
+    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Business.App" />
+      <module name="Ca2DatastructuresAloyJoyal" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Business.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.App" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -189,7 +212,47 @@
       <option name="project" value="LOCAL" />
       <updated>1714531116954</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="updated queues and Linked Lists with Future use Methods">
+      <option name="closed" value="true" />
+      <created>1714537675039</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1714537675039</updated>
+    </task>
+    <task id="LOCAL-00018" summary="File Operators added">
+      <option name="closed" value="true" />
+      <created>1714537699912</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1714537699912</updated>
+    </task>
+    <task id="LOCAL-00019" summary="App Completed">
+      <option name="closed" value="true" />
+      <created>1714537907376</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1714537907376</updated>
+    </task>
+    <task id="LOCAL-00020" summary="App Completed">
+      <option name="closed" value="true" />
+      <created>1714538020635</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1714538020635</updated>
+    </task>
+    <task id="LOCAL-00021" summary="App java doc Completed">
+      <option name="closed" value="true" />
+      <created>1714538143413</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1714538143413</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -210,6 +273,10 @@
     <MESSAGE value="java docs added to linked list and updated" />
     <MESSAGE value="added getter for doctors name in Bounded prio queue" />
     <MESSAGE value="updated patient added 2 methods needed for app" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated patient added 2 methods needed for app" />
+    <MESSAGE value="updated queues and Linked Lists with Future use Methods" />
+    <MESSAGE value="File Operators added" />
+    <MESSAGE value="App Completed" />
+    <MESSAGE value="App java doc Completed" />
+    <option name="LAST_COMMIT_MESSAGE" value="App java doc Completed" />
   </component>
 </project>

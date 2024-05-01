@@ -2,8 +2,10 @@ package Datastructures;
 
 import HospitalObjects.Appointment;
 
+import java.io.Serializable;
 
-public class LinkedList {
+
+public class LinkedList implements Serializable {
     /**
      * Represents a node in the linked list.
      */

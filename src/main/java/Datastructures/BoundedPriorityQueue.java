@@ -1,8 +1,10 @@
 package Datastructures;
 
+import java.io.Serializable;
+
 import HospitalObjects.Appointment;
 
-public class BoundedPriorityQueue extends LinkedList {
+public class BoundedPriorityQueue extends LinkedList implements Serializable{
     private Node first;
     private final int sizelimit;
     private final String DoctorsName;
@@ -40,12 +42,12 @@ public class BoundedPriorityQueue extends LinkedList {
         currentSize++;
         return true;
     }
-/**
- * Adds an appointment to the queue (safe version).
- *
- * @param appointment The appointment to add.
- * @return true if the appointment was added successfully, false otherwise.
- */
+    /**
+     * Adds an appointment to the queue (safe version).
+     *
+     * @param appointment The appointment to add.
+     * @return true if the appointment was added successfully, false otherwise.
+     */
 
     public boolean safeAdd(Appointment appointment) {
         try {
@@ -84,18 +86,6 @@ public class BoundedPriorityQueue extends LinkedList {
         }
         return remove();
     }
-    //peek method
-    /**
-     * Returns the appointment at the head of the queue without removing it
-     *
-     * @return The appointment at the head of the queue or null if the queue is empty
-     */
-    public Appointment peek() {
-        if (isEmpty()) {
-            return null;
-        }
-        return first.appointmentData;
-    }
     /**
      * Removes the appointment from the linked list.
      *
@@ -127,7 +117,18 @@ public class BoundedPriorityQueue extends LinkedList {
         return DoctorsName;
     }
 
-
+    //peek method
+    /**
+     * Returns the appointment at the head of the queue without removing it
+     *
+     * @return The appointment at the head of the queue or null if the queue is empty
+     */
+    public Appointment peek() {
+        if (isEmpty()) {
+            return null;
+        }
+        return first.appointmentData;
+    }
 
 
 

@@ -2,9 +2,10 @@ package HospitalObjects;
 
 import Datastructures.LinkedList;
 
+import java.io.Serializable;
 import java.time.LocalDate;
 
-public class Patient {
+public class Patient implements Serializable {
     /**
      * the variables for the information of patient
      */
@@ -97,5 +98,17 @@ public Patient(String firstName, String secondName,
 
     return firstName.equals(patient.firstName)&& secondName.equals(patient.secondName) &&
             dateOfBirth.equals(patient.dateOfBirth);
+    }
+    /**
+     * to string method to return the patient information
+     */
+    @Override
+    public String toString(){
+        return "Patient{"+
+                "firstName='"+firstName+'\''+
+                ", secondName='"+secondName+'\''+
+                ", dateOfBirth="+dateOfBirth+
+                ", joiningDate="+joiningDate+
+                '}';
     }
 }
