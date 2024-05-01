@@ -27,11 +27,17 @@ public class App {
         sc = new Scanner(System.in);
         random = new Random();
     }
-
+    /**
+     * Main method to run the application
+     * @param args
+     */
     public static void main(String[] args) {
         setup();
         menu();
     }
+    /**
+     * Method to setup the application
+     */
     private static void setup(){
         System.out.println("How many doctors are available?");
         int numDoctors = Integer.parseInt(sc.nextLine());
@@ -49,6 +55,9 @@ public class App {
 
         displayPatients();
     }
+    /**
+     * Method to display the menu
+     */
     private static void menu() {
         boolean running = true;
         while (running) {
@@ -91,13 +100,17 @@ public class App {
         System.out.println("4. Make an appointment");
         System.out.println("5 Display Appointments");
         System.out.println("6. exit");
-    }
+    }/**
+     * Method to display the doctors
+     */
     private static void displayDoctors() {
         System.out.print("Doctors Ava: ");
         for (BoundedPriorityQueue doctorQueue : doctorQueues) {
             System.out.print(doctorQueue.getDoctorsName()+"|");
         }
-    }
+    }/**
+     * Method to add a patient
+     */
     private static void addPatient() {
         Patient patient;
         System.out.println("Enter the first name of the patient");
@@ -116,7 +129,9 @@ public class App {
             System.out.println("Invalid date format. Please enter the date in the format YYYY-MM-DD.");
         }
     }
-
+    /**
+     * Method to delete a patient
+     */
     private static void deletePatient() {
         System.out.println("Enter the first name of the patient you want to delete");
         String firstName = sc.nextLine();
@@ -146,7 +161,9 @@ public class App {
         }
 
     }
-
+    /**
+     * Method to display the patients
+     */
     private static void displayPatients() {
         for (Patient patient : patients) {
             System.out.println(patient.toString());
@@ -160,6 +177,9 @@ public class App {
         }
         return null;
     }
+    /**
+     * Method to create an appointment
+     */
     private static void createAppointment() {
         displayDoctors();
         System.out.println("Enter the name of the doctor you want to make an appointment with");
@@ -203,7 +223,11 @@ public class App {
         patient.addAppointment(new Appointment(firstName, lastName, LocalDate.parse(dob), issue, LocalDate.parse(appointmentDate),triage,doctorName));
         System.out.println("Appointment created successfully");
     }
-
+    /**
+     * Method to find a doctor queue
+     * @param doctorName The name of the doctor to find the queue for.
+     * @return The doctor queue, or null if not found.
+     */
     private static BoundedPriorityQueue findDoctorQueue(String doctorName) {
         BoundedPriorityQueue doctorQueueFound = null;
         for (BoundedPriorityQueue doctorQueue : doctorQueues) {
@@ -215,6 +239,9 @@ public class App {
         System.out.println("Doctor not found");
         return doctorQueueFound;
     }
+    /**
+     * Method to display the next appointment for a doctor
+     */
     private static void displayNextAppointmentForDoctor() {
         displayDoctors();
         System.out.println("Enter the name of the doctor you want to display the next appointment for");
