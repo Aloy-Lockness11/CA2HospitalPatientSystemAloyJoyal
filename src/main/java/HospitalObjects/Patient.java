@@ -29,12 +29,12 @@ private LinkedList appointments;
 
 
 public Patient(String firstName, String secondName,
-               LocalDate dateOfBirth, LocalDate joiningDate){
+               LocalDate dateOfBirth){
 
     this.firstName = firstName;
     this.secondName = secondName;
     this.dateOfBirth = dateOfBirth;
-    this.joiningDate = joiningDate;
+    this.joiningDate = LocalDate.now();
    this.appointments = new LinkedList();
     }
     /**
@@ -69,6 +69,13 @@ public Patient(String firstName, String secondName,
 
     public LinkedList getAppointments() {
         return new LinkedList().cloneList(getAppointments());
+    }
+    /**
+     * Adds an appointment to the patient's list of appointments.
+     * @param appointment The appointment to add.
+     */
+    public void addAppointment(Appointment appointment) {
+        appointments.addLast(appointment);
     }
     /**
      * Compares this patient to the specified object. The result is true if and only if
