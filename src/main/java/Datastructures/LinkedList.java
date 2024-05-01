@@ -4,12 +4,19 @@ import HospitalObjects.Appointment;
 
 
 public class LinkedList {
+    /**
+     * Represents a node in the linked list.
+     */
     private Node first;
     private  int numElelments;
 
      class Node {
         Appointment appointmentData;
         Node next;
+         /**
+          * Constructs a new node with the given appointment data.
+          * @param appointmentData The appointment data for this node.
+          */
 
         Node(Appointment appointmentData) {
             this.appointmentData = appointmentData;
@@ -17,19 +24,32 @@ public class LinkedList {
 
         }
     }
+    /**
+     * Constructs an empty LinkedList.
+     */
         public LinkedList(){
             this.first = null;
             this.numElelments=0;
     }
-
+    /**
+     * Checks if the linked list is empty.
+     * @return true if the list is empty, false otherwise.
+     */
     public boolean isEmpty(){
         return first == null;
     }
-
+    /**
+     * Returns the number of elements in the linked list.
+     * @return The number of elements in the list.
+     */
     public int size(){
         return numElelments;
     }
 
+    /**
+     * Adds an appointment to the end of the linked list.
+     * @param appointmentData The appointment data to add.
+     */
     public void addLast(Appointment appointmentData){
         Node newNode = new Node(appointmentData);
 
@@ -47,6 +67,11 @@ public class LinkedList {
         }
         numElelments++;
     }
+    /**
+     * Removes the appointment from the linked list.
+     * @param data The appointment data to remove.
+     * @return true if the appointment was removed, false if it was not found.
+     */
     public boolean remove(Appointment data) {
         if (isEmpty()) return false;
 
@@ -71,6 +96,11 @@ public class LinkedList {
        numElelments--;
         return true;
     }
+    /**
+     * Creates a copy of the current linked list.
+     * @param list The linked list to clone.
+     * @return A new LinkedList that is a shallow copy of the current list.
+     */
     public LinkedList cloneList(LinkedList list){
         LinkedList newList = new LinkedList();
         Node current = first;
@@ -80,6 +110,9 @@ public class LinkedList {
         }
         return newList;
     }
+    /**
+     * Prints the appointment data of each node in the linked list.
+     */
     public void printList() {
         Node current = first;
         while (current != null) {
