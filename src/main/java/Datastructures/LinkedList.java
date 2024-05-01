@@ -1,13 +1,13 @@
 package Datastructures;
 
 import HospitalObjects.Appointment;
-import org.w3c.dom.Node;
+
 
 public class LinkedList {
     private Node first;
     private  int numElelments;
 
-    private static class Node {
+     class Node {
         Appointment appointmentData;
         Node next;
 
