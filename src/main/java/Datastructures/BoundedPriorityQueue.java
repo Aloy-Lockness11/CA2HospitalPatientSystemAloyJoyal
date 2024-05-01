@@ -84,6 +84,43 @@ public class BoundedPriorityQueue extends LinkedList {
         }
         return remove();
     }
+    public boolean removespec(Appointment data) {
+
+        if (isEmpty())
+            return false;
+
+
+        Node current = first;
+
+        Node previous = null;
+
+
+        while (current != null && !current.appointmentData.equals(data)) {
+
+            previous = current;
+
+            current = current.next;
+        }
+
+
+        if (current == null) {
+            return false;
+        }
+
+
+        if (previous == null) {
+
+            first = first.next;
+        } else {
+            //
+            previous.next = current.next;
+        }
+
+
+        currentSize--;
+
+        return true;
+    }
 
 
 
