@@ -84,6 +84,24 @@ public class BoundedPriorityQueue extends LinkedList {
         }
         return remove();
     }
+    //peek method
+    /**
+     * Returns the appointment at the head of the queue without removing it
+     *
+     * @return The appointment at the head of the queue or null if the queue is empty
+     */
+    public Appointment peek() {
+        if (isEmpty()) {
+            return null;
+        }
+        return first.appointmentData;
+    }
+    /**
+     * Removes the appointment from the linked list.
+     *
+     * @param data The appointment data to remove.
+     * @return true if the appointment was removed, false if it was not found.
+     */
     public boolean removespec(Appointment data) {
         if (isEmpty())
             return false;

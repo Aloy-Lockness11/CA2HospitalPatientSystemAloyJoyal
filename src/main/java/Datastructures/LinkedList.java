@@ -39,6 +39,21 @@ public class LinkedList {
         return first == null;
     }
     /**
+     * Retrieves the appointment data with the specified  doctors name in the linked list.
+     * @param DoctorName The name of the appointment data to retrieve.
+     * @return The appointment data with the specified name, or null if not found.
+     */
+    public Appointment get(String DoctorName) {
+        Node current = first;
+        while (current != null) {
+            if (current.appointmentData.getDoctorFullName().equalsIgnoreCase(DoctorName)){
+                return current.appointmentData;
+            }
+            current = current.next;
+        }
+        return null;
+    }
+    /**
      * Returns the number of elements in the linked list.
      * @return The number of elements in the list.
      */
